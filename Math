@@ -1,0 +1,144 @@
+/*  background: linear-gradient(#a619f8, #00f2fe); */
+
+
+let write = prompt('Write :')
+
+let letter = write.slice(0, 1)
+
+let letter3 = write.slice(-1)
+
+
+
+let solution = null
+let solution2 = null
+let solution3 = null
+let solution4 = null
+
+del()
+
+function del() {
+    empt = write.replace(letter, '')
+    empt2 = empt.replace(letter3, '')
+    empt2 = empt.trim()
+    empt2 = empt2.slice(0, 1)
+    
+    console.log(empt2)
+
+    solve(empt2)
+
+}
+
+function solve(empt2) {
+
+    if (!isNaN(letter) && isNaN(empt2) && !isNaN(letter3)) {
+        if (empt2 == '-') {
+            solution = letter -= letter3
+            alert('Answer : ' + solution)
+        }
+        else if (empt2 == '+') {
+            solution2 = letter += letter3
+            alert('Answer : ' + solution2)
+        }
+        else if (empt2 == '*') {
+
+            solution3 = letter *= letter3
+            alert('Answer : ' + solution3)
+        }
+        else if (empt2 == '/') {
+            solution4 = letter /=letter3
+            alert('Answer : ' + solution4)
+        }
+        else {
+            alert('Second meaning should be sign (+ , - , * , /)')
+        }
+    }
+    else {
+        alert('Do not write letters')
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let letters = 'abcdefghijklmnopqrstuvwxyz';
+letters = letters.toUpperCase();
+
+let result = [];
+
+for (let i = 0; i < 5; i++) {
+    rando();
+}
+
+console.log('Ids:', result);
+
+function rando() {
+    let numbers = Math.random();
+    numbers = numbers.toFixed(2);
+    let last = parseFloat(numbers) * 100;
+    check(last);
+}
+
+function check(last) {
+    if (last >= 26) {
+        rando();
+    } else {
+        let on1 = letters.charAt(last);
+        result.push(on1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      
+ 
+
+
+
+
+
+
+
+
+
+
