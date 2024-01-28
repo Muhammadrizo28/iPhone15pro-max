@@ -1,0 +1,185 @@
+.cont {margin: 0 auto;}
+
+.divv {width: 500px; height: 500px; background-color: transparent; position: relative; display: flex; flex-direction: column; align-items: center; gap: 10px; left: 500px; top: 200px; z-index: 2;}
+
+.login {font-size: 25px; color: white; margin-top: 70px;}
+
+
+.inpt {width: 220px; height: 39px; ;border: 2px solid white; margin-top: 20px; border-radius: 20px; outline: none; color: white; z-index: 3;}
+
+.inpt2 {width: 220px; height: 39px; border: 2px solid white; border-radius: 20px; outline: none; color: white; z-index: 3;}
+
+input {background-color: transparent; padding-left: 15px;}
+
+.but {width: 220px; background: linear-gradient(to right , rgb(255, 81, 0), yellow); height: 39px; border: none; border-radius: 20px; color: white; font-size: 15px; z-index: 3; cursor: pointer;}
+
+
+
+
+
+.circle {width: 400px; height: 400px;  background-color: transparent; border: 3px solid white; position: absolute; border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+
+    animation-name: circle;
+    animation-duration: 6s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+
+}
+.circle2 {width: 400px; height: 400px; background-color: transparent; border: 3px solid white; position: absolute;   border-radius: 41% 44% 56% 59%/38% 62% 63% 37%; 
+
+    animation-name: circle;
+    animation-duration: 8s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+    
+
+}
+.circle3 {width: 400px; height: 400px; background-color: transparent; border: 3px solid white; position: absolute;  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+
+    animation-name: circle;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes circle {
+    from {
+        border: 5px solid white;
+        transform: rotate(0deg);
+    }
+
+   
+
+    to {
+        border: 5px solid white;
+        transform: rotate(360deg);
+    }
+}
+
+.divv:hover  .circle{
+
+
+    animation-name: circle;
+    animation-play-state: paused;
+
+    animation-name: circle2;
+    animation-play-state: running;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes circle2 {
+
+    from {
+        box-shadow: 0px 1px 8px 2px green;
+        border: 5px solid green;
+        transform: rotate(0deg);
+    }
+
+   
+
+    to {
+        box-shadow: 0px 1px 8px 2px green;
+        border: 5px solid green;
+        transform: rotate(360deg);
+        
+    }
+
+}
+
+
+
+
+
+
+
+.divv:hover  .circle2{
+
+
+    animation-name: circle;
+    animation-play-state: paused;
+
+    animation-name: circle2w;
+    animation-play-state: running;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes circle2w {
+
+    from {
+        box-shadow: 0px 1px 8px 2px yellow;
+        border: 5px solid yellow;
+        transform: rotate(0deg);
+    }
+
+   
+
+    to {
+        box-shadow: 0px 1px 8px 2px yellow;
+        border: 5px solid yellow;
+        transform: rotate(360deg);
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divv:hover  .circle3{
+
+
+    animation-name: circle;
+    animation-play-state: paused;
+
+    animation-name: circle2n;
+    animation-play-state: running;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes circle2n {
+
+    from {
+        box-shadow: 0px 1px 8px 2px red;
+        border: 5px solid red;
+        transform: rotate(0deg);
+    }
+
+   
+
+    to {
+        box-shadow: 0px 1px 8px 2px red;
+        border: 5px solid red;
+        transform: rotate(360deg);
+        
+    }
+
+}
+
+
+
+
+
+
