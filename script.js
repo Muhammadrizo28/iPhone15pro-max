@@ -4,15 +4,19 @@ let account = 7777
 
 let money = 10000
 
-let ask = prompt('Name ?')
+let ask2 = prompt('Account ?')
 
-if (ask == name) {
-    let ask2 = prompt('Account ?')
+if (ask2 == account) {
+    let ask3 = prompt('how much ?')
 
-    if (ask2 == account) {
-        
+    if (ask3 <= money) {
+        money -= ask3
+        alert ('you got : ' + ask3 +'\nBalance : ' + money)
+    }
+    else {
+        alert('error')
     }
 }
 else {
-    alert('error')
+    alert('not found')
 }
