@@ -1,177 +1,55 @@
-.cont {margin: 0 auto;}
 
-.divv {width: 500px; height: 500px; background-color: transparent; position: relative; display: flex; flex-direction: column; align-items: center; gap: 10px; left: 500px; top: 200px; z-index: 2;}
 
-.login {font-size: 25px; color: white; margin-top: 70px;}
+body {background-color: #5a5959}
 
+.cont {width: 370px; height: 750px; background-color: black; margin: 0 auto; position: relative; display: flex; flex-direction: column; align-items: center; border-radius: 20px; overflow: hidden;}
 
-.inpt {width: 220px; height: 39px; ;border: 2px solid white; margin-top: 20px; border-radius: 20px; outline: none; color: white; z-index: 3;}
+.but_menu { background-color: transparent; width: 94%; height: 80px; position: absolute; top: 200px; display: flex; gap: 12px;}
+.but_menu2 {background-color: transparent; width: 94%; height: 80px; position: absolute; top: 300px; display: flex; gap: 12px;}
+.but_menu3 {background-color: transparent; width: 94%; height: 80px; position: absolute; top: 400px; display: flex; gap: 12px;}
+.but_menu4 {background-color: transparent; width: 94%; height: 80px; position: absolute; top: 500px; display: flex; gap: 12px;}
+.last_menu {background-color: transparent; width: 94%; height: 80px; position: absolute; top: 600px; display: flex; gap: 12px;}
 
-.inpt2 {width: 220px; height: 39px; border: 2px solid white; border-radius: 20px; outline: none; color: white; z-index: 3;}
 
-input {background-color: transparent; padding-left: 15px;}
 
-.but {width: 220px; background: linear-gradient(to right , rgb(255, 81, 0), yellow); height: 39px; border: none; border-radius: 20px; color: white; font-size: 15px; z-index: 3; cursor: pointer;}
 
 
 
+.but {width: 23%; height: 100%; background-color: rgb(190, 190, 190); border-radius: 50%; border: none; cursor: pointer;}
 
+.but_col {width: 23%; height: 100%; background-color: orange; border-radius: 50%; border: none; cursor: pointer;}
 
-.circle {width: 400px; height: 400px;  background-color: transparent; border: 3px solid white; position: absolute; border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
 
-    animation-name: circle;
-    animation-duration: 6s;
-    animation-timing-function:linear;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+.but2 {width: 23%; height: 100%; background-color: rgb(85, 85, 85); border-radius: 50%; border: none; cursor: pointer;}
 
+.but_col2 {width: 23%; height: 100%; background-color: orange; border-radius: 50%; border: none; cursor: pointer;}
 
-}
-.circle2 {width: 400px; height: 400px; background-color: transparent; border: 3px solid white; position: absolute;   border-radius: 41% 44% 56% 59%/38% 62% 63% 37%; 
 
-    animation-name: circle;
-    animation-duration: 8s;
-    animation-timing-function:linear;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+.but3 {width: 23%; height: 100%; background-color: rgb(85, 85, 85);; border-radius: 50%; border: none; cursor: pointer;}
 
-    
+.but_col3 {width: 23%; height: 100%; background-color: orange; border-radius: 50%; border: none; cursor: pointer;}
 
-}
-.circle3 {width: 400px; height: 400px; background-color: transparent; border: 3px solid white; position: absolute;  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
 
-    animation-name: circle;
-    animation-duration: 10s;
-    animation-timing-function:linear;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+.but4 {width: 23%; height: 100%; background-color: rgb(85, 85, 85);; border-radius: 50%; border: none; cursor: pointer;}
 
-}
+.but_col4 {width: 23%; height: 100%; background-color: orange; border-radius: 50%; border: none; cursor: pointer;}
 
-@keyframes circle {
-    from {
-        border: 5px solid white;
-        transform: rotate(0deg);
-    }
+.last_but {width: 23%; height: 100%; background-color: rgb(85, 85, 85);; border-radius: 50%; border: none; cursor: pointer;}
 
-   
+.last_but_long {width: 46%; height: 100%; background-color: rgb(85, 85, 85);; border-radius: 50px; border: none; cursor: pointer;}
 
-    to {
-        border: 5px solid white;
-        transform: rotate(360deg);
-    }
-}
+.last_but_col {width: 23%; height: 100%; background-color: orange; border-radius: 50%; border: none; cursor: pointer;}
 
-.divv:hover  .circle{
 
 
-    animation-name: circle;
-    animation-play-state: paused;
+span {font-size: 26px; color: white; }
 
-    animation-name: circle2;
-    animation-play-state: running;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
+.txt_zero {margin-right: 90px; font-size: 30px;}
 
+.inpt {width: 85%; height: 80px; background-color: transparent; position: absolute; top: 80px; display: flex; justify-content: end;}
 
-@keyframes circle2 {
 
-    from {
-        box-shadow: 0px 1px 8px 2px green;
-        border: 5px solid green;
-        transform: rotate(0deg);
-    }
+.inpt_txt {font-size: 80px; font-family: 'Open Sans', sans-serif;}
 
-   
-
-    to {
-        box-shadow: 0px 1px 8px 2px green;
-        border: 5px solid green;
-        transform: rotate(360deg);
-        
-    }
-
-}
-
-
-
-
-
-
-
-.divv:hover  .circle2{
-
-
-    animation-name: circle;
-    animation-play-state: paused;
-
-    animation-name: circle2w;
-    animation-play-state: running;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes circle2w {
-
-    from {
-        box-shadow: 0px 1px 8px 2px yellow;
-        border: 5px solid yellow;
-        transform: rotate(0deg);
-    }
-
-   
-
-    to {
-        box-shadow: 0px 1px 8px 2px yellow;
-        border: 5px solid yellow;
-        transform: rotate(360deg);
-        
-    }
-
-}
-
-
-
-
-
-
-
-.divv:hover  .circle3{
-
-
-    animation-name: circle;
-    animation-play-state: paused;
-
-    animation-name: circle2n;
-    animation-play-state: running;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes circle2n {
-
-    from {
-        box-shadow: 0px 1px 8px 2px red;
-        border: 5px solid red;
-        transform: rotate(0deg);
-    }
-
-   
-
-    to {
-        box-shadow: 0px 1px 8px 2px red;
-        border: 5px solid red;
-        transform: rotate(360deg);
-        
-    }
-
-}
-
-
-
-
-
+.del_div {cursor: pointer; width: 30px; height: 30px; background-size: cover; background-color: transparent; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAoZJREFUaEPtmLtrFVEQh79UkkIsfOIjMSLxSTqxSGOElAabELW0SKWND1AxASUqEtFGC7GwUjBNxD9AjQlioTZCiCiGaGFnF9K6I+fAsuzdnTln78bAbnf3npn57m/n/M7s7WANXh1rkJkGuq6n1ijdKF2gQNMe/3t7dAIngX1tAt0JLAP3gF/ZGiHtIcAfgL42AafT/gEGgc/pmyHQ007lGpj/lZgHDsVA3wau1kWbqtMLfPOfLUqfAZ6tArCUPAbMWKGPALPAulWCHkjA31qgu4BPwCYDsDzKDcCWgpg3iXoCo7lM0OIUH4GDmsxujVjUUUBi3wNbc2LFyi4D48ANRW41tPT7y8RuhhRJ/ZLfQD+w6G7sAd4BO1I5PLC/NQlcKqmhhg5xiqfA2QyAgMt+2A7cAq5nvpcDaqEK6BineABcyEDsBkaSlrmbub/fuUJR70tIqdJVOMUTYLREPVF4TrnBC6HXA99Ldr22xR8B51osPuwsbKMyWSG07HqZK6q6TgEvcpL9AHoMRUrbQxxgmyFhq6UPgfMtvhQLlcNis7JOKXQVPV0E7Dkr62mf8DTwXKlCdtl94KLBPWQzlvV2qdK+nnjqNSN4nmuI3YlPy2Cf59N70xNci3pq6NATUTazf9uo/USUHx0ye8gRLke5ZvYYA24qnqZaaZ9rl3vdsUx5X92UV+RCr5O55LgCWHUi5uWpwlGUfLnLzEr7LMPJiDoVUzkiNhhaat4BrkQUDw09kJ4ELe+IvuCr5E3mRGj1gLifQHc6LgS6zv89lpxAX2KhJV5OsIlkGJLH1o5rxb01Pc5LHqJ0OyBNORtok1wRixulI8QzhTZKm+SKWNwoHSGeKfQveI5oLnOhbn4AAAAASUVORK5CYII=);}
 
