@@ -1,140 +1,51 @@
-let arr = [
-    {
-        id: Math.random(),
-        name: 'Timur',
-        info: {
-            school: '235',
-            faculity: 'SMM'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Imran',
-        info: {
-            school: 'ne izvestno',
-            faculity: 'programming'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Aminjon',
-        info: {
-            school: '444',
-            faculity: 'Dizayn'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Muxammad',
-        info: {
-            school: '5555',
-            faculity: 'Backend'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Timur',
-        info: {
-            school: '235',
-            faculity: 'SMM'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Imran',
-        info: {
-            school: 'ne izvestno',
-            faculity: 'programming'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Aminjon',
-        info: {
-            school: '444',
-            faculity: 'Dizayn'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },  
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Muxammad',
-        info: {
-            school: '5555',
-            faculity: 'Backend'
-        },
-    },]
+let persons = [
 
+    { name: "John", age: 25, city: "NewYork" },
+    { name: "Alice", age: 30, city: "London" },
+    { name: "Bob", age: 22, city: "Paris" },
+    { name: "Alex", age: 19, city: "London" },
+    { name: "Tyler", age: 24, city: "NewYork" },
+    { name: "Constantine", age: 31, city: "Paris" },
+    { name: "Cole", age: 21, city: "London" }
 
-let categories = [
-    {
-        course: ' SMM',
-        count: 0
-    },
-    {
-        course: 'PROGRAMMING',
-        count: 0
-    },
-    {
-        course: '     3DSMAX',
-        count: 0
-    },
-    {
-        course: ' DIZAYN',
-        count: 0
-    },
-    {       
-        course: '   BACKEND',
-        count: 0
-    },
-]
+];
 
-for (let item of arr) {
+let n = 0;
 
-    item.info.faculity = item.info.faculity.toLocaleUpperCase()
-}
+let ask = prompt('City').toUpperCase()
 
-for (let obj of categories) {
+for (item of persons) {
 
-    obj.course= obj.course.toLocaleUpperCase().trim()
-}
+    if (ask == item.city.toUpperCase()) {
+        
+        console.log(item.name);
 
+        n += item.age
 
-
-for (let item of arr) {
-
-    for (let obj of categories) {
-
-        if (item.info.faculity == obj.course) {
-            obj.count++
-        }
     }
+ 
 }
+console.log(n);
 
-console.log(categories);
+
+addn()
+function addn() {
+
+    let name = prompt('add name')
+    let age = prompt('add age')
+    let city = prompt('add city')
+
+    if (isNaN(name) && isNaN(city) && !isNaN(age)) {
+
+        age = parseFloat(age)
+
+        persons.push({name, age, city})
+
+        console.log(persons);
+    }
+    
+    
+}
 
 
 
