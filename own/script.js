@@ -1,51 +1,40 @@
-let persons = [
+/* let name = prompt('name')
 
-    { name: "John", age: 25, city: "NewYork" },
-    { name: "Alice", age: 30, city: "London" },
-    { name: "Bob", age: 22, city: "Paris" },
-    { name: "Alex", age: 19, city: "London" },
-    { name: "Tyler", age: 24, city: "NewYork" },
-    { name: "Constantine", age: 31, city: "Paris" },
-    { name: "Cole", age: 21, city: "London" }
+let second = prompt('secondname')
 
-];
 
-let n = 0;
+alert(name + second + '@outlook.com') */
 
-let ask = prompt('City').toUpperCase()
+start()
 
-for (item of persons) {
+function start() {
 
-    if (ask == item.city.toUpperCase()) {
-        
-        console.log(item.name);
+    let num = Math.random().toFixed(2)
 
-        n += item.age
+    num = parseFloat(num) * 100
+
+
+    if (num > 20) {
+    
+        start()
+    }
+    else {
+
+        let arr = 'qwertyuiopasdfghjklzxcvbnm'
+        let arr2 = 'mnbvcxzlkjhgfdsapoiuytrewq'
+
+        let choose = arr.slice(num, num + 2).toLocaleUpperCase()
+        let choose2 = arr2.slice(num, num + 2).toLocaleUpperCase()
+
+        let num2 = num * 10 + 33
+
+        console.log(choose + num + choose2 + num2);
 
     }
- 
-}
-console.log(n);
-
-
-addn()
-function addn() {
-
-    let name = prompt('add name')
-    let age = prompt('add age')
-    let city = prompt('add city')
-
-    if (isNaN(name) && isNaN(city) && !isNaN(age)) {
-
-        age = parseFloat(age)
-
-        persons.push({name, age, city})
-
-        console.log(persons);
-    }
-    
     
 }
+
+
 
 
 
