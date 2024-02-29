@@ -1,39 +1,36 @@
-/* let name = prompt('name')
+let txt = document.querySelector('.txt')
+let txt2 = document.querySelector('.txt2')
+let txt3 = document.querySelector('.txt3')
 
-let second = prompt('secondname')
+let letter = 'qwertyuiopasdfghjklzxcvbnm'
+letter = letter.toLocaleUpperCase()
 
+let arr = []
 
-alert(name + second + '@outlook.com') */
+number()
 
-start()
+function number() {
 
-function start() {
-
+    
     let num = Math.random().toFixed(2)
-
     num = parseFloat(num) * 100
 
+    if (num < 21 && arr.length < 4) {
 
-    if (num > 20) {
-    
-        start()
+        let word = letter.slice(num , num + 3) + num + letter.charAt(num) + (num + 9)
+        arr.push(word)
+        number()
     }
-    else {
-
-        let arr = 'qwertyuiopasdfghjklzxcvbnm'
-        let arr2 = 'mnbvcxzlkjhgfdsapoiuytrewq'
-
-        let choose = arr.slice(num, num + 2).toLocaleUpperCase()
-        let choose2 = arr2.slice(num, num + 2).toLocaleUpperCase()
-
-        let num2 = num * 10 + 33
-
-        console.log(choose + num + choose2 + num2);
+    else if (num > 20 && arr.length < 4){
+        number()
 
     }
     
 }
 
+txt.innerHTML = arr[0]
+txt2.innerHTML = arr[1]
+txt3.innerHTML = arr[2]
 
 
 
