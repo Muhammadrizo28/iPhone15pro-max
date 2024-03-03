@@ -1,45 +1,38 @@
-let txt = document.querySelector('.txt')
-let txt2 = document.querySelector('.txt2')
-let txt3 = document.querySelector('.txt3')
+let box = document.querySelector('.box')
 
-let letter = 'qwertyuiopasdfghjklzxcvbnm'
-letter = letter.toLocaleUpperCase()
+let btn = document.querySelector('.btn')
 
-let arr = []
+let btn2 = document.querySelector('.btn2')
 
-number()
+let sheet = document.querySelector('.sheet')
 
-function number() {
 
-    
-    let num = Math.random().toFixed(2)
-    num = parseFloat(num) * 100
+btn.onclick = () => {
 
-    if (num < 21 && arr.length < 4) {
+    box.style.display = 'block'
+    btn2.style.display = 'block'
+    btn.style.display = 'none'
+    sheet.style.display = 'block'
 
-        let word = letter.slice(num , num + 3) + num + letter.charAt(num) + (num + 9)
-        arr.push(word)
-        number()
-    }
-    else if (num > 20 && arr.length < 4){
-        number()
-
-    }
-    
 }
 
-txt.innerHTML = arr[0]
-txt2.innerHTML = arr[1]
-txt3.innerHTML = arr[2]
+
+btn2.onclick = () => {
+
+    box.style.display = 'none'
+    btn.style.display = 'block'
+    btn2.style.display = 'none'
+    sheet.display = 'none'
+}
 
 
+sheet.onclick = () => {
 
-
-
-
-
-
-
+    box.style.display = 'none'
+    btn.style.display = 'block'
+    btn2.style.display = 'none'
+    sheet.style.display = 'none'
+}
 
 
 
