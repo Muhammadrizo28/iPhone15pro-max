@@ -11,7 +11,7 @@ body {background-color: white;}
     color: red;
     position: absolute;
     left: 90px;
-    top: 30;
+    top: 60px;
 }
 
 .title {
@@ -20,7 +20,7 @@ body {background-color: white;}
     color: black;
     position: absolute;
     left: 90px;
-    top: 50px;
+    top: 80px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -33,9 +33,33 @@ body {background-color: white;}
     color: black;
     position: absolute;
     left: 90px;
-    top: 120px;
+    top: 150px;
     font-family: "Roboto", sans-serif;
 
+}
+
+header {
+
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cost {
+
+    font-size: 20px;
+    color: black;
+    margin-right: 30px;
+    position: absolute;
+    top: -20px;
+    transition: 1s;
+    
+    
 }
 
 .left_box {
@@ -46,6 +70,7 @@ body {background-color: white;}
     position: relative;
     left: 90px;
     top: 200px;
+   
     
 }
 
@@ -617,4 +642,143 @@ body {background-color: white;}
     right: 14px;
     bottom: 80px;
 
+}
+
+.in_box_txt {
+
+    font-size: 42px;
+    color: black;
+    position: absolute;
+    left: 550px;
+    top: 1740px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.in_box_img {
+
+    width: 900px;
+    height: 350px;
+    background-color: #fafafa;
+    position: absolute;
+    left: 270px;
+    top: 1830px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+
+    
+}
+
+.iphone_in_box {
+
+    width: 160px;
+    height: 100%;
+
+}
+
+.wire_in_box {
+    width: 86px;
+    height: 100%;
+}
+
+.cost_anime {
+
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.under_box {
+
+    font-size: 15px;
+    position: absolute;
+    left: 583px;
+    top: 2200;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    
+}
+
+.under_box2 {
+
+    font-size: 15px;
+    position: absolute;
+    left: 785px;
+    top: 2200;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    
+}
+
+.environment_title {
+
+    font-size: 14px;
+    position: absolute;
+    top: 2290px;
+    left: 650px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(98, 98, 98);
+
+}
+
+.environment_txt {
+
+    font-size: 14px;
+    color: black;
+    position: absolute;
+    left: 245px;
+    top: 2330px;
+    opacity: 0.7;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.carbon_link {
+
+    text-decoration: none;
+    color: rgb(27, 76, 251);
+}
+
+.carbon_link:hover {
+
+    text-decoration: underline;
+    
+}
+
+.change_color {
+
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@keyframes move {
+
+    from {
+        
+        top: -20px;
+    }
+
+    50% {
+        top: 40px;
+    }
+
+    to {
+        top: 20px;
+    }
 }
