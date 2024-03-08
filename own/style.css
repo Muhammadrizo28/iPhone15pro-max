@@ -75,6 +75,7 @@ header {
 }
 
 .box {
+    overflow: hidden;
     transition: 1s;
     width: 900px;
     height: 585px;
@@ -105,8 +106,9 @@ header {
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.7;
-    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+    
 
 }
 
@@ -123,11 +125,12 @@ header {
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.7;
+    opacity: 0;
     transform: rotate(180deg);
     position: absolute;
     left: 17px;
-    cursor: pointer;
+    transition: 0.5s;
+    
 }
 
 
@@ -782,3 +785,5 @@ header {
         top: 20px;
     }
 }
+
+

@@ -12,6 +12,11 @@ let inner_box_iphone = document.querySelector('.under_box')
 
 
 
+
+let right_bottom = document.querySelector('.btn_right')
+let left_bottom = document.querySelector('.btn_left')
+
+
 let prices_model_arr = [
 
     999,
@@ -159,6 +164,10 @@ for(let item of childs_colors) {
         arr3.push(item)
         item.style.border = '2px solid blue'
 
+        right_bottom.style.opacity = '0.7'
+        right_bottom.style.cursor = 'pointer'
+        left_bottom.style.opacity = '0.7'
+        left_bottom.style.cursor = 'pointer'
 
     }
    
@@ -166,9 +175,6 @@ for(let item of childs_colors) {
 }
 
 
-
-let right_bottom = document.querySelector('.btn_right')
-let left_bottom = document.querySelector('.btn_left')
 
 let n = 0
 
@@ -248,6 +254,9 @@ for(let i = 0; i < childs_colors.length; i++){
         }
     })
 }
+
+
+
 
 
 
